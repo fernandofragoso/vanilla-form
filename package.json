@@ -1,0 +1,8 @@
+{
+  "name": "vanilla-form",
+  "version": "0.1.0",
+  "description": "VanillaJS Form",
+  "main": "index.js",
+  "author": "Fernando Fragoso",
+  "license": "MIT"
+}
