@@ -32,7 +32,7 @@ body {
 }
 
 .form__item {
-  margin-top: 16px;
+  margin-top: 10px;
 }
 
 .form__label {
@@ -49,8 +49,10 @@ textarea {
   box-sizing: border-box;
 }
 
+input, 
 select {
   height: 48px;
+  box-sizing: border-box;
 }
 
 .form__input {
@@ -106,4 +108,33 @@ select {
 .form__button:hover {
   background-color: #1272d5;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,.2);
+}
+
+.tabs {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  font-size: 12px;
+}
+
+.tabs__option {
+  flex-grow: 1;
+  background-color: #E7E7E7;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 14px;
+  border: 1px solid #E7E7E7;
+  border-top: 0;
+  border-radius: 0 0 6px 6px;
+  color: #999;
+}
+
+.tabs__option--selected {
+  background-color: #FFF;
+  color: #333;
+}
+
+.invisible {
+  display: none;
 }

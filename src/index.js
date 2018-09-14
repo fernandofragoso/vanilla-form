@@ -4,13 +4,18 @@ import { createElement } from './components/elements';
 import style from './index.css';
 
 const requestForm = document.getElementById('request-form');
+const userForm = document.getElementById('user-form');
 
-getFields().then(inputs => {
-  const tags = inputs.map(input => {
+getFields().then(response => {
+  const requestTags = response.request_fields.map(input => {
     return createElement(input);
   });
-  render(requestForm, tags.join(''));
+  const userTags = response.user_fields.map(input => {
+    return createElement(input);
+  });
+
+  render(requestForm, requestTags.join(''));
+  render(userForm, userTags.join(''));
+  
   registerEvents();
 });
-
-

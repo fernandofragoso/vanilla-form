@@ -25,6 +25,21 @@ export const createTextArea = (input) => {
   `
 }
 
+export const createText = (input) => {
+  return `
+    <div class='form__item'>
+      <label for="${input.label}" class="form__label">${input.label}</label>
+      <input
+        type="text"
+        class="form__input"
+        name="${input.label}" 
+        placeholder="${input.placeholder}" 
+        ${(input.required) ? 'required' : ''}/>
+      <span class="form__helper-text"></span>
+    </div>
+  `
+}
+
 export const createElement = (input) => {
   switch (input.type) {
     case 'enumerable':
@@ -32,6 +47,6 @@ export const createElement = (input) => {
     case 'big_text':
       return createTextArea(input);
     default:
-      return '';
+      return createText(input);
   }
 }

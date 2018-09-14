@@ -12,9 +12,23 @@
                 <small>Peça orçamento grátis, online!</small>
             </div>
             <form novalidate>
-                <div id="request-form"></div>
-                <button type="button" class="form__button">BUSCAR PROFISSIONAIS</button>
+                <section id="request-form-section" class="">
+                    <div id="request-form"></div>
+                    <button id="button-search" type="button" class="form__button">
+                        BUSCAR PROFISSIONAIS
+                    </button>
+                </section>
+                <section id="user-form-section" class="invisible">
+                    <div id="user-form"></div>
+                    <button id="button-finish" type="button" class="form__button">
+                        FINALIZAR
+                    </button>
+                </section>
             </form>
+        </div>
+        <div class="tabs">
+            <div id="request-tab" class="tabs__option tabs__option--selected">1. Seu pedido</div>
+            <div id="user-tab" class="tabs__option">2. Seus dados</div>
         </div>
     </body>
 </html>
