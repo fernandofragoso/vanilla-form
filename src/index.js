@@ -1,5 +1,15 @@
-import style from "./index.css";
+import { getFields } from './service/api';
+import { render } from './components/render';
+import { createElement } from './components/elements';
+import style from './index.css';
 
-const fn = () => console.log('JS');
+const requestForm = document.getElementById('request-form');
 
-fn();
+getFields().then(inputs => {
+  const elements = inputs.map(input => {
+    return createElement(input);
+  });
+  render(requestForm, elements.join(''));
+});
+
+

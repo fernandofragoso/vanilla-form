@@ -1,3 +1,98 @@
 body {
-  background-color: red;
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  margin: 20px;
+}
+
+.form__header {
+  border-bottom: 2px solid rgba(19,147,246,.2);
+  color: #1393f6;
+  margin: 0 0 30px;
+  padding: 15px 0;
+  text-align: center;
+  width: 100%;
+}
+
+.form__header h3 {
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 900;
+  margin: 0;
+}
+
+.form__header small {
+  font-size: 14px;
+  margin-top: 10px;
+  display: block;
+}
+
+.form__item {
+  margin-top: 16px;
+}
+
+.form__label {
+  color: rgba(51,51,51,.9);
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+textarea {
+  resize: none;
+  height: 75px;
+  box-sizing: border-box;
+}
+
+select {
+  height: 48px;
+}
+
+.form__input {
+  background-color: #eff4fa;
+  border: 1px solid rgba(19,147,246,.5);
+  border-radius: 6px;
+  color: inherit;
+  display: block;
+  font-size: 16px;
+  font-style: normal;
+  line-height: inherit;
+  padding: 13px 11px;
+  transition: box-shadow .18s , -webkit-box-shadow .18s;
+  width: 100%;
+  resize: none;
+}
+
+.form__input:hover {
+  box-shadow: 0 0 1px 1px rgba(19,147,246,.5);
+  outline: none;
+}
+
+.form__button {
+  background-color: #1393f6;
+  color: #fff;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,.2);
+  display: block;
+  width: 100%;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 900;
+  font-size: 14px;
+  margin-top: 36px;
+  padding: 17px;
+  letter-spacing: .3px;
+  line-height: 1;
+  text-align: center;
+  text-transform: uppercase;
+  transition: border-color .2s ease-in , box-shadow .2s ease-in , background-color .2s ease-in , color .3s ease , -webkit-box-shadow .2s ease-in;
+}
+
+.form__button:hover {
+  background-color: #1272d5;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,.2);
 }
