@@ -13,16 +13,16 @@ const validateInput = (target) => {
   }
 }
 
-const inputHandler = (ev) => {
-  const target = ev.target;
-  validateInput(target);
-}
-
 const changeTab = () => {
   document.querySelector('#request-form-section').classList.add('invisible');
   document.querySelector('#user-form-section').classList.remove('invisible');
   document.querySelector('#request-tab').classList.remove('tabs__option--selected');
   document.querySelector('#user-tab').classList.add('tabs__option--selected');
+}
+
+const inputHandler = (ev) => {
+  const target = ev.target;
+  validateInput(target);
 }
 
 const buttonSearchHandler = () => {
@@ -57,7 +57,3 @@ export const registerEvents = () => {
   document.querySelector('#button-search').addEventListener('click', buttonSearchHandler);
   document.querySelector('#button-finish').addEventListener('click', buttonFinishHandler);
 }
-
-export const render = (element, content) => {
-  element.innerHTML = content;
-};

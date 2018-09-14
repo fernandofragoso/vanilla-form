@@ -1,4 +1,4 @@
-export const createSelect = (input) => {
+const createSelect = (input) => {
   return `
     <div class='form__item'>
       <label for="${input.label}" class="form__label">${input.label}</label>
@@ -11,7 +11,7 @@ export const createSelect = (input) => {
   `;
 }
 
-export const createTextArea = (input) => {
+const createTextArea = (input) => {
   return `
     <div class='form__item'>
       <label for="${input.label}" class="form__label">${input.label}</label>
@@ -25,7 +25,7 @@ export const createTextArea = (input) => {
   `
 }
 
-export const createText = (input) => {
+const createText = (input) => {
   return `
     <div class='form__item'>
       <label for="${input.label}" class="form__label">${input.label}</label>
