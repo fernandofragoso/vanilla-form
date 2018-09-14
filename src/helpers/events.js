@@ -25,7 +25,7 @@ const inputHandler = (ev) => {
   validateInput(target);
 }
 
-const buttonSearchHandler = () => {
+export const buttonSearchHandler = () => {
   const requiredInputs = document.querySelectorAll('#request-form .form__input[required]');
   let isValid = true;
   Array.prototype.forEach.call(requiredInputs, function(input){
@@ -54,6 +54,6 @@ export const registerEvents = () => {
     input.addEventListener('keyup', inputHandler);
   });
 
-  document.querySelector('#button-search').addEventListener('click', buttonSearchHandler);
-  document.querySelector('#button-finish').addEventListener('click', buttonFinishHandler);
+  document.getElementById('button-search').addEventListener('click', buttonSearchHandler);
+  document.getElementById('button-finish').addEventListener('click', buttonFinishHandler);
 }

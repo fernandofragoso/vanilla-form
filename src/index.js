@@ -11,12 +11,8 @@ const render = (element, content) => {
 };
 
 getFields().then(response => {
-  const requestTags = response.request_fields.map(input => {
-    return createElement(input);
-  });
-  const userTags = response.user_fields.map(input => {
-    return createElement(input);
-  });
+  const requestTags = response.request_fields.map(input => createElement(input));
+  const userTags = response.user_fields.map(input => createElement(input));
 
   render(requestForm, requestTags.join(''));
   render(userForm, userTags.join(''));
