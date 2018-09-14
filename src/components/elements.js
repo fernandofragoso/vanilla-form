@@ -6,6 +6,7 @@ export const createSelect = (input) => {
         <option value="">${input.mask}</option>
         ${Object.keys(input.values).map(value => `<option value=${value}>${value}</option>`)}
       </select>
+      <span class="form__helper-text"></span>
     </div>
   `;
 }
@@ -19,6 +20,7 @@ export const createTextArea = (input) => {
         name="${input.label}" 
         placeholder="${input.placeholder}" 
         ${(input.required) ? 'required' : ''}/></textarea>
+      <span class="form__helper-text"></span>
     </div>
   `
 }

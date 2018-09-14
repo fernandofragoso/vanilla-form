@@ -11,6 +11,7 @@ body {
 .form__header {
   border-bottom: 2px solid rgba(19,147,246,.2);
   color: #1393f6;
+  font-style: italic;
   margin: 0 0 30px;
   padding: 15px 0;
   text-align: center;
@@ -70,6 +71,16 @@ select {
 .form__input:hover {
   box-shadow: 0 0 1px 1px rgba(19,147,246,.5);
   outline: none;
+}
+
+.form__input--invalid {
+  border-color: #b24141;
+}
+
+.form__helper-text {
+  color: #b24141;
+  display: inline-block;
+  font-size: 12px;
 }
 
 .form__button {
